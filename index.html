@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.4.2-web/css/all.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./img/logo.svg" alt="" />
+        <h3>Company</h3>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Store</a></li>
+          <li class="button-container">
+            <input type="checkbox" id="input-toggle" />
+            <label for="input-toggle" class="label-toggle">
+              <img
+                class="moon"
+                src="./img/moon-svgrepo-com.svg"
+                alt=""
+                width="28px"
+                height="28px"
+              />
+              <img
+                class="sun"
+                src="./img/sun-svgrepo-com (1).svg"
+                alt=""
+                width="28px"
+                height="28px"
+              />
+              <div class="ball"></div>
+            </label>
+          </li>
+
+          <li class="account">
+            <a href="#">Account <i class="fa-light fa-angle-down"></i></a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="main">
+      <section class="text">
+        <h1>Hello world</h1>
+        <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content
+        </p>
+        <div class="buttons">
+          <button>Button</button>
+          <button>Button</button>
+        </div>
+      </section>
+
+      <form id="form">
+        <div class="form_container">
+          <div class="logo">
+            <h2>Login account</h2>
+            <div class="logo_i">
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              <a href="#"><i class="fa-brands fa-google"></i></a>
+            </div>
+          </div>
+          <p>Or login using email & password</p>
+          <hr />
+
+          <label for="email">Email address</label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="hello@hey.com"
+            value=""
+            required
+          />
+
+          <label for="password">Password</label>
+          <input
+            type="password"
+            placeholder="••••••••••••"
+            name="password"
+            id="password"
+            value=""
+            required
+          />
+
+          <label class="agree_check">
+            <input type="checkbox" name="agree" class="check_input" />
+            <span class="round"></span>
+            <p>Remember me <a href="#">Forgot password?</a></p>
+          </label>
+          <button class="form_button" type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
